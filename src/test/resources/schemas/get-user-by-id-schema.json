@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "id": "95f8d6ec-951e-49b8-b50b-8a15d02ac883",
+      "firstName": "Nazir",
+      "lastName": "Ali",
+      "age": 24,
+      "occupation": "QA",
+      "nationality": "Indonesia",
+      "hobbies": [
+        "Futsal"
+      ],
+      "gender": "MALE",
+      "createdDate": "2021-10-01T18:46:07.2541297",
+      "updatedDate": null
+    }
+  ],
+  "required": [
+    "id",
+    "firstName",
+    "lastName",
+    "age",
+    "occupation",
+    "nationality",
+    "hobbies",
+    "gender",
+    "createdDate",
+    "updatedDate"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The id schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "95f8d6ec-951e-49b8-b50b-8a15d02ac883"
+      ]
+    },
+    "firstName": {
+      "$id": "#/properties/firstName",
+      "type": "string",
+      "title": "The firstName schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Nazir"
+      ]
+    },
+    "lastName": {
+      "$id": "#/properties/lastName",
+      "type": "string",
+      "title": "The lastName schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Ali"
+      ]
+    },
+    "age": {
+      "$id": "#/properties/age",
+      "type": "integer",
+      "title": "The age schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        24
+      ]
+    },
+    "occupation": {
+      "$id": "#/properties/occupation",
+      "type": "string",
+      "title": "The occupation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "QA"
+      ]
+    },
+    "nationality": {
+      "$id": "#/properties/nationality",
+      "type": "string",
+      "title": "The nationality schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Indonesia"
+      ]
+    },
+    "hobbies": {
+      "$id": "#/properties/hobbies",
+      "type": "array",
+      "title": "The hobbies schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "Futsal"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/hobbies/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/hobbies/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Futsal"
+            ]
+          }
+        ]
+      }
+    },
+    "gender": {
+      "$id": "#/properties/gender",
+      "type": "string",
+      "title": "The gender schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "MALE"
+      ]
+    },
+    "createdDate": {
+      "$id": "#/properties/createdDate",
+      "type": "string",
+      "title": "The createdDate schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2021-10-01T18:46:07.2541297"
+      ]
+    },
+    "updatedDate": {
+      "$id": "#/properties/updatedDate",
+      "type": "null",
+      "title": "The updatedDate schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    }
+  },
+  "additionalProperties": true
+}
